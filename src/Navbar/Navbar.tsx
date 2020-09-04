@@ -1,12 +1,15 @@
 import React from "react";
 import "./Navbar.css";
+import "../MapView/MapView";
+import { NavLink } from "react-router-dom";
+
 function NavBar() {
   return (
     <nav className="navbar">
       <ul className="navbar-nav">
         <li className="logo">
-          <a href="#" className="nav-link">
-            <span className="link-text logo-text">Fireship</span>
+          <NavLink to="/" className="nav-link" exact={true}>
+            <span className="link-text logo-text">COVID Visualiser</span>
             <svg
               aria-hidden="true"
               focusable="false"
@@ -30,21 +33,21 @@ function NavBar() {
                 ></path>
               </g>
             </svg>
-          </a>
+          </NavLink>
         </li>
 
         <li className="nav-item">
-          <a href="#" className="nav-link">
+          <NavLink className="nav-link" to="/numbers">
             <i className="fas fa-sort-amount-down"></i>
             <span className="link-text">Numbers</span>
-          </a>
+          </NavLink>
         </li>
 
         <li className="nav-item">
-          <a href="#" className="nav-link">
+          <NavLink className="nav-link" exact={true} to="/">
             <i className="fas fa-globe-asia"></i>
             <span className="link-text">Map</span>
-          </a>
+          </NavLink>
         </li>
       </ul>
     </nav>
