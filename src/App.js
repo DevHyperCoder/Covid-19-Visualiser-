@@ -8,8 +8,10 @@ function App() {
   return (
     <div>
       <Navbar></Navbar>
-      <Numbers></Numbers>
-      <MapView></MapView>
+      <main>
+        <Numbers></Numbers>
+        <MapView></MapView>
+      </main>
     </div>
   );
 }
