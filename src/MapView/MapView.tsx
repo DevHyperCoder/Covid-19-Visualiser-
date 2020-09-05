@@ -5,15 +5,13 @@ import "mapbox-gl/dist/mapbox-gl.css";
 const TOKEN =
   "MAPBOX_API_KEY";
 
-
-
 const MapView = () => {
   const [viewport, setViewPort] = useState({
     width: "100%",
     height: 900,
-    latitude: 0,
-    longitude: 0,
-    zoom: 2,
+    latitude: 21,
+    longitude: 78,
+    zoom: 4,
   });
 
   const _onViewportChange = (viewport:any) =>
