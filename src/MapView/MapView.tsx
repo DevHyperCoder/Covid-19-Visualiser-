@@ -3,9 +3,9 @@ import ReactMapGL from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
 const TOKEN =
-  "MAPBOX_API_KEY";
+  "MAPBOX_API_TOKEN";
 
-const MapView = () => {
+function MapView({json}:{json:any}) {
   const [viewport, setViewPort] = useState({
     width: "100%",
     height: 900,
@@ -17,6 +17,8 @@ const MapView = () => {
   const _onViewportChange = (viewport:any) =>
     setViewPort({ ...viewport});
 
+  // Fetch data from the API
+  console.log(json)
   return (
     <div style={{ zIndex:-1 }}>
       
