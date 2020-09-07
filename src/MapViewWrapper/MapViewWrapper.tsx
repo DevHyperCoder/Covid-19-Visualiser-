@@ -18,7 +18,7 @@ export default class MapViewWrapper extends React.Component <MyProps,MyState>{
     }
 
     async componentDidMount(){
-        const re = await fetch("http://covid19-india-adhikansh.herokuapp.com/states")
+        const re = await fetch("https://covid19-india-adhikansh.herokuapp.com/states")
         const json = (await re.json()).state
 
         this.setState({json:json})
