@@ -1,0 +1,40 @@
+table {
+  background-color: var(--bg-primary);
+  table-layout: auto;
+  border: 3px;
+}
+
+td {
+  border-bottom: 1px dashed aliceblue;
+}
+
+h1,
+th,
+td,
+p,
+a {
+  color: aliceblue;
+  padding-top: 1rem;
+}
+
+p {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h1,
+th {
+  text-align: center;
+}
+
+td:not(:first-of-type) {
+  text-align: right;
+}
+
+.table-container {
+  max-width: 800px;
+  margin: auto;
+}
