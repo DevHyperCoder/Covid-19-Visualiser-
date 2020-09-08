@@ -2,6 +2,7 @@ table {
   background-color: var(--bg-primary);
   table-layout: auto;
   border: 3px;
+  margin:auto;
 }
 
 td {
@@ -34,7 +35,7 @@ td:not(:first-of-type) {
   text-align: right;
 }
 
-.table-container {
+.container {
   max-width: 800px;
   margin: auto;
 }

@@ -35,6 +35,7 @@ function Numbers({ json }: { json: any }) {
       </table>
     </div>
     <p>All data taken from <a href="https:mohfw.gov.in/">mohfw.gov.in</a></p>
+    <p><a href="https://github.com/DevHyperCoder/Covid-19-Visualiser-React">GitHub</a> Repo for the code</p>
     </div>
   );
 }
